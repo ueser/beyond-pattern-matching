@@ -96,8 +96,8 @@ class GenomeRepository:
             return
 
         # Only add high-quality genomes
-        if accuracy < 80.0:  # Only store genomes with 80%+ accuracy
-            print(f"📉 Genome accuracy too low ({accuracy:.1f}%), not storing")
+        if accuracy < 100.0:  # Only store genomes with 100% accuracy
+            # print(f"📉 Genome accuracy too low ({accuracy:.1f}%), not storing")
             return
 
         genome = GenomeEntry(

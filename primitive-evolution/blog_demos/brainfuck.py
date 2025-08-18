@@ -22,6 +22,9 @@ class BrainfuckInterpreter:
         self.pointer = 0
         self.instruction_pointer = 0
         self.output = []
+        self.input_reads = 0
+        self.output_writes = 0
+        self.hit_step_limit = False
 
     def run(self, code, input_data="", debug=False):
         """Execute Brainfuck code with optional input data."""
@@ -31,6 +34,9 @@ class BrainfuckInterpreter:
         input_index = 0
         self.instruction_pointer = 0
         self.output = []
+        self.input_reads = 0
+        self.output_writes = 0
+        self.hit_step_limit = False
 
         # Reset state
         self.memory = [0] * len(self.memory)
@@ -68,13 +74,16 @@ class BrainfuckInterpreter:
                 
             elif cmd == '.':
                 self.output.append(chr(self.memory[self.pointer]))
+                self.output_writes += 1
                 
             elif cmd == ',':
-                if input_index < len(input_data):
-                    self.memory[self.pointer] = ord(input_data[input_index])
-                    input_index += 1
+                if len(input_data) > 0:
+                    # Circular input: cycle back to beginning when reaching end
+                    self.memory[self.pointer] = ord(input_data[input_index % len(input_data)])
+                    input_index += 1  # Move to next input character
+                    self.input_reads += 1
                 else:
-                    # EOF behavior: leave cell unchanged (common convention)
+                    # No input data: leave cell unchanged
                     pass
                 
             elif cmd == '[':
@@ -98,7 +107,7 @@ class BrainfuckInterpreter:
             step_count += 1
 
         if step_count >= max_steps:
-            raise RuntimeError(f"Program exceeded maximum steps ({max_steps}) - possible infinite loop")
+            self.hit_step_limit = True
 
         return ''.join(self.output)
 

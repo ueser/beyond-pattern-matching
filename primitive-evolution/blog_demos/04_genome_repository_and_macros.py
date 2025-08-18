@@ -52,8 +52,8 @@ def build_diverse_repository():
         print(f"\n🧬 Evolving: {func_name}")
         
         config = EvolutionConfig(
-            population_size=100,
-            max_generations=50,
+            population_size=3000,
+            max_generations=200,
             input_output_mapping=input_output_mapping,
             use_genome_repository=True,  # Use existing repository and add to it
             mutation_rate=0.15,

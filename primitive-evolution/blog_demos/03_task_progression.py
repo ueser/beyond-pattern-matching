@@ -215,45 +215,6 @@ def find_common_patterns(code_list, min_length=3):
     
     return sorted(common, key=lambda x: (x[1], len(x[0])), reverse=True)[:5]  # Top 5
 
-def demonstrate_solution_efficiency():
-    """Compare evolved solutions to hand-crafted ones"""
-    print_header("Solution Efficiency Comparison")
-    
-    # Hand-crafted solutions we know
-    hand_crafted = {
-        'f(x) = x': (',.' , 2),
-        'f(x) = x + 1': (',+.', 4),
-        'f(x) = 2*x': (',[->++<]>.', 10),
-        'f(x) = 3*x': (',[->+++<]>.', 11),
-    }
-    
-    print("Comparing evolved vs hand-crafted solutions:")
-    print("Function   | Hand-crafted | Evolved | Efficiency")
-    print("-" * 55)
-    
-    for func_name, (hand_code, hand_len) in hand_crafted.items():
-        # Quick evolution for comparison
-        if func_name == 'f(x) = x':
-            mapping = {i: i for i in range(6)}
-        elif func_name == 'f(x) = x + 1':
-            mapping = {i: i + 1 for i in range(6)}
-        elif func_name == 'f(x) = 2*x':
-            mapping = {i: i * 2 for i in range(6)}
-        elif func_name == 'f(x) = 3*x':
-            mapping = {i: i * 3 for i in range(6)}
-        
-        evolved = evolve_function(func_name, mapping, max_generations=20, population_size=50)
-        evolved_len = evolved['length']
-        
-        if evolved_len > 0:
-            efficiency = "Better" if evolved_len <= hand_len else "Worse"
-            if evolved_len == hand_len:
-                efficiency = "Same"
-        else:
-            efficiency = "Failed"
-        
-        print(f"{func_name:10} | {hand_code:11} | {evolved['code'][:11]:>11} | {efficiency}")
-
 def main():
     """Main demonstration function"""
     print("📈 BRAINFUCK EVOLUTION BLOG DEMO")
@@ -261,7 +222,6 @@ def main():
     
     solutions = demonstrate_task_progression()
     analyze_complexity_scaling()
-    demonstrate_solution_efficiency()
     
     print_header("Summary")
     
