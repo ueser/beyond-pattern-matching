@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Eser"
+  given-names: "Umut"
+title: "Beyond Pattern Matching: Hierarchical Motif Discovery for Program Evolution"
+version: 1.0.0
+date-released: 2025-01-20
+url: "https://github.com/umut-eser/beyond-pattern-matching"
+repository-code: "https://github.com/umut-eser/beyond-pattern-matching"
+abstract: "A hierarchical motif discovery system for evolving Brainfuck programs on sequence generation tasks. The system discovers multi-level motifs (L1, L2, L3, ...) and uses them to evolve increasingly sophisticated programs through grammar-based evolution."
+keywords:
+  - "program synthesis"
+  - "evolutionary computation"
+  - "motif discovery"
+  - "hierarchical abstraction"
+  - "grammar-based evolution"
+  - "minimum description length"
+license: MIT
