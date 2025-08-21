@@ -182,7 +182,7 @@ If you use this work in your research, please cite:
   title = {Beyond Pattern Matching: Hierarchical Motif Discovery for Program Evolution},
   year = {2025},
   url = {https://github.com/umut-eser/beyond-pattern-matching},
-  note = {Blog post: [Substack URL when published]}
+  note = {Blog post: [Teaching AI to Build Its Own Building](https://umuteser1.substack.com/p/teaching-ai-to-build-its-own-building)}
 }
 ```
 
