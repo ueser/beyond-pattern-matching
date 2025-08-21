@@ -1,8 +1,0 @@
-run_id,task,emergence_generation,total_solutions_found,first_solution
-0,const_ones,0,89,",>-,<."
-0,natural,0,22,",<,+."
-0,arithmetic_odd,0,7,",++."
-0,doubling,,0,
-0,oscillator,,0,
-0,modular_cycle,,0,
-0,fibonacci,,0,

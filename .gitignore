@@ -166,3 +166,5 @@ data/*.db-*
 */archive/*
 .DS_Store
 poetry.lock
+
+primitive-evolution/blog_demos/outputs/
