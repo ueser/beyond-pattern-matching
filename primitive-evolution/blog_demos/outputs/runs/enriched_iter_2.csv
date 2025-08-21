@@ -1,0 +1,15 @@
+run_id,task,emergence_generation,total_solutions_found,first_solution
+42,drain,0,367,",<."
+42,copy,0,64,",<>."
+42,increment,0,28,",+."
+42,add_two,0,19,",++."
+42,doubling,,0,
+42,oscillator,0,1,",++>++,[<]-,>+>,<-."
+42,modular_cycle,0,1,",<+>>>>+<++[>]<+<--<<+<+."
+42,fibonacci,,0,
+42,add_3,0,1,",+++."
+42,alternating_step,0,1,",>+++>++,+++<."
+42,growing_step,0,1,",++>[>]<++<++<+[>]<++<+<++[>]+++<<+++<++<++++<+++<++<++."
+42,parity_dependent_step,0,1,",<++<<+>++[>][>]<->-<-,++[>]<-<<+<++."
+42,double_add_1,,0,
+42,sawtooth_with_reset_30,,0,

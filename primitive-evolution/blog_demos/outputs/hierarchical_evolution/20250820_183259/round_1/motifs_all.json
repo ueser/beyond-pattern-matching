@@ -1,0 +1,432 @@
+{
+  "1": [
+    {
+      "pattern": [
+        "+",
+        "+",
+        "<"
+      ],
+      "support": 7,
+      "mdl_gain": 9.5,
+      "level": 1,
+      "name": "L1M1"
+    },
+    {
+      "pattern": [
+        "+",
+        "+",
+        "+"
+      ],
+      "support": 9,
+      "mdl_gain": 9.5,
+      "level": 1,
+      "name": "L1M2"
+    },
+    {
+      "pattern": [
+        "+",
+        "+",
+        ">"
+      ],
+      "support": 14,
+      "mdl_gain": 23.5,
+      "level": 1,
+      "name": "L1M3"
+    },
+    {
+      "pattern": [
+        "+",
+        ">",
+        ">"
+      ],
+      "support": 7,
+      "mdl_gain": 9.5,
+      "level": 1,
+      "name": "L1M4"
+    },
+    {
+      "pattern": [
+        "+",
+        "+",
+        "+",
+        ">"
+      ],
+      "support": 4,
+      "mdl_gain": 6.0,
+      "level": 1,
+      "name": "L1M5"
+    },
+    {
+      "pattern": [
+        "-",
+        "-",
+        ">"
+      ],
+      "support": 8,
+      "mdl_gain": 13.5,
+      "level": 1,
+      "name": "L1M6"
+    },
+    {
+      "pattern": [
+        "<",
+        "+",
+        "<"
+      ],
+      "support": 10,
+      "mdl_gain": 13.5,
+      "level": 1,
+      "name": "L1M7"
+    },
+    {
+      "pattern": [
+        "+",
+        "<",
+        "<"
+      ],
+      "support": 13,
+      "mdl_gain": 21.5,
+      "level": 1,
+      "name": "L1M8"
+    },
+    {
+      "pattern": [
+        "<",
+        "-",
+        ">"
+      ],
+      "support": 10,
+      "mdl_gain": 15.5,
+      "level": 1,
+      "name": "L1M9"
+    },
+    {
+      "pattern": [
+        "-",
+        ">",
+        ">"
+      ],
+      "support": 7,
+      "mdl_gain": 13.5,
+      "level": 1,
+      "name": "L1M10"
+    },
+    {
+      "pattern": [
+        ">",
+        ">",
+        ">"
+      ],
+      "support": 9,
+      "mdl_gain": 7.5,
+      "level": 1,
+      "name": "L1M11"
+    },
+    {
+      "pattern": [
+        "-",
+        "-",
+        "<"
+      ],
+      "support": 4,
+      "mdl_gain": 3.5,
+      "level": 1,
+      "name": "L1M12"
+    },
+    {
+      "pattern": [
+        "[",
+        "<",
+        "]"
+      ],
+      "support": 7,
+      "mdl_gain": 9.5,
+      "level": 1,
+      "name": "L1M13"
+    },
+    {
+      "pattern": [
+        ">",
+        "-",
+        ">"
+      ],
+      "support": 7,
+      "mdl_gain": 11.5,
+      "level": 1,
+      "name": "L1M14"
+    },
+    {
+      "pattern": [
+        "-",
+        ">",
+        "+"
+      ],
+      "support": 7,
+      "mdl_gain": 9.5,
+      "level": 1,
+      "name": "L1M15"
+    },
+    {
+      "pattern": [
+        ">",
+        "+",
+        ">"
+      ],
+      "support": 11,
+      "mdl_gain": 15.5,
+      "level": 1,
+      "name": "L1M16"
+    },
+    {
+      "pattern": [
+        "-",
+        "-",
+        "-"
+      ],
+      "support": 4,
+      "mdl_gain": 3.5,
+      "level": 1,
+      "name": "L1M17"
+    },
+    {
+      "pattern": [
+        "-",
+        "<",
+        "<"
+      ],
+      "support": 4,
+      "mdl_gain": 3.5,
+      "level": 1,
+      "name": "L1M18"
+    },
+    {
+      "pattern": [
+        "<",
+        "-",
+        "<"
+      ],
+      "support": 4,
+      "mdl_gain": 3.5,
+      "level": 1,
+      "name": "L1M19"
+    },
+    {
+      "pattern": [
+        "-",
+        ">",
+        "-"
+      ],
+      "support": 4,
+      "mdl_gain": 3.5,
+      "level": 1,
+      "name": "L1M20"
+    },
+    {
+      "pattern": [
+        "<",
+        "<",
+        "<"
+      ],
+      "support": 9,
+      "mdl_gain": 11.5,
+      "level": 1,
+      "name": "L1M21"
+    },
+    {
+      "pattern": [
+        "<",
+        "<",
+        "-"
+      ],
+      "support": 4,
+      "mdl_gain": 3.5,
+      "level": 1,
+      "name": "L1M22"
+    },
+    {
+      "pattern": [
+        "<",
+        "+",
+        "+"
+      ],
+      "support": 7,
+      "mdl_gain": 9.5,
+      "level": 1,
+      "name": "L1M23"
+    },
+    {
+      "pattern": [
+        ">",
+        "+",
+        "<"
+      ],
+      "support": 13,
+      "mdl_gain": 21.5,
+      "level": 1,
+      "name": "L1M24"
+    },
+    {
+      "pattern": [
+        ">",
+        "+",
+        "<",
+        "<"
+      ],
+      "support": 5,
+      "mdl_gain": 9.0,
+      "level": 1,
+      "name": "L1M25"
+    },
+    {
+      "pattern": [
+        "+",
+        "<",
+        "<",
+        "<"
+      ],
+      "support": 4,
+      "mdl_gain": 6.0,
+      "level": 1,
+      "name": "L1M26"
+    },
+    {
+      "pattern": [
+        "+",
+        ">",
+        "+"
+      ],
+      "support": 16,
+      "mdl_gain": 25.5,
+      "level": 1,
+      "name": "L1M27"
+    },
+    {
+      "pattern": [
+        ">",
+        "+",
+        "+"
+      ],
+      "support": 10,
+      "mdl_gain": 15.5,
+      "level": 1,
+      "name": "L1M28"
+    },
+    {
+      "pattern": [
+        ">",
+        ">",
+        "+"
+      ],
+      "support": 6,
+      "mdl_gain": 7.5,
+      "level": 1,
+      "name": "L1M29"
+    },
+    {
+      "pattern": [
+        ">",
+        "-",
+        "<"
+      ],
+      "support": 4,
+      "mdl_gain": 3.5,
+      "level": 1,
+      "name": "L1M30"
+    },
+    {
+      "pattern": [
+        "<",
+        "+",
+        ">"
+      ],
+      "support": 6,
+      "mdl_gain": 7.5,
+      "level": 1,
+      "name": "L1M31"
+    },
+    {
+      "pattern": [
+        "+",
+        "<",
+        "+"
+      ],
+      "support": 8,
+      "mdl_gain": 9.5,
+      "level": 1,
+      "name": "L1M32"
+    },
+    {
+      "pattern": [
+        "+",
+        ">",
+        "+",
+        "<"
+      ],
+      "support": 4,
+      "mdl_gain": 6.0,
+      "level": 1,
+      "name": "L1M33"
+    },
+    {
+      "pattern": [
+        "+",
+        "+",
+        ">",
+        "+"
+      ],
+      "support": 7,
+      "mdl_gain": 12.0,
+      "level": 1,
+      "name": "L1M34"
+    },
+    {
+      "pattern": [
+        "+",
+        ">",
+        "+",
+        "+"
+      ],
+      "support": 7,
+      "mdl_gain": 12.0,
+      "level": 1,
+      "name": "L1M35"
+    },
+    {
+      "pattern": [
+        "<",
+        "<",
+        "+"
+      ],
+      "support": 4,
+      "mdl_gain": 3.5,
+      "level": 1,
+      "name": "L1M36"
+    },
+    {
+      "pattern": [
+        ">",
+        "+",
+        "+",
+        "+"
+      ],
+      "support": 4,
+      "mdl_gain": 6.0,
+      "level": 1,
+      "name": "L1M37"
+    },
+    {
+      "pattern": [
+        "+",
+        "+",
+        ">",
+        "+",
+        "+"
+      ],
+      "support": 4,
+      "mdl_gain": 4.5,
+      "level": 1,
+      "name": "L1M38"
+    }
+  ],
+  "2": []
+}

@@ -1,0 +1,604 @@
+[
+  {
+    "pattern": [
+      "Motif_10",
+      "Motif_11"
+    ],
+    "support": 3,
+    "mdl_gain": 1.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_7",
+      "Motif_8"
+    ],
+    "support": 5,
+    "mdl_gain": 3.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_7",
+      "Motif_8",
+      "Motif_9"
+    ],
+    "support": 2,
+    "mdl_gain": 1.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_8",
+      "Motif_9",
+      "Motif_7"
+    ],
+    "support": 2,
+    "mdl_gain": 1.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_7",
+      "Motif_8",
+      "Motif_9",
+      "Motif_7"
+    ],
+    "support": 2,
+    "mdl_gain": 2.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_1",
+      "Motif_1",
+      "Motif_1"
+    ],
+    "support": 2,
+    "mdl_gain": 1.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "[",
+      ">"
+    ],
+    "support": 10,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      ">",
+      "-"
+    ],
+    "support": 10,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "-",
+      "<"
+    ],
+    "support": 10,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "+"
+    ],
+    "support": 10,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "+",
+      "]"
+    ],
+    "support": 10,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "]",
+      "["
+    ],
+    "support": 4,
+    "mdl_gain": 2.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "[",
+      ">",
+      "-"
+    ],
+    "support": 10,
+    "mdl_gain": 17.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      ">",
+      "-",
+      "<"
+    ],
+    "support": 10,
+    "mdl_gain": 17.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "-",
+      "<",
+      "+"
+    ],
+    "support": 10,
+    "mdl_gain": 17.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "]"
+    ],
+    "support": 10,
+    "mdl_gain": 17.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "+",
+      "]",
+      "["
+    ],
+    "support": 4,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "]",
+      "[",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "[",
+      ">",
+      "-",
+      "<"
+    ],
+    "support": 10,
+    "mdl_gain": 26.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      ">",
+      "-",
+      "<",
+      "+"
+    ],
+    "support": 10,
+    "mdl_gain": 26.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "-",
+      "<",
+      "+",
+      "]"
+    ],
+    "support": 10,
+    "mdl_gain": 26.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "]",
+      "["
+    ],
+    "support": 4,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "+",
+      "]",
+      "[",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "]",
+      "[",
+      ">",
+      "-"
+    ],
+    "support": 4,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_2",
+      "Motif_1"
+    ],
+    "support": 6,
+    "mdl_gain": 4.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_1",
+      "Motif_4"
+    ],
+    "support": 6,
+    "mdl_gain": 4.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_4",
+      "Motif_5"
+    ],
+    "support": 6,
+    "mdl_gain": 4.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_5",
+      "<"
+    ],
+    "support": 9,
+    "mdl_gain": 7.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_2",
+      "Motif_1",
+      "Motif_4"
+    ],
+    "support": 6,
+    "mdl_gain": 9.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_1",
+      "Motif_4",
+      "Motif_5"
+    ],
+    "support": 6,
+    "mdl_gain": 9.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_4",
+      "Motif_5",
+      "<"
+    ],
+    "support": 6,
+    "mdl_gain": 9.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_2",
+      "Motif_1",
+      "Motif_4",
+      "Motif_5"
+    ],
+    "support": 6,
+    "mdl_gain": 14.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_1",
+      "Motif_4",
+      "Motif_5",
+      "<"
+    ],
+    "support": 6,
+    "mdl_gain": 14.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_7",
+      "["
+    ],
+    "support": 4,
+    "mdl_gain": 2.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "]",
+      "Motif_8"
+    ],
+    "support": 4,
+    "mdl_gain": 2.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_8",
+      "Motif_3"
+    ],
+    "support": 7,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_3",
+      ">"
+    ],
+    "support": 7,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_7",
+      "[",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "+",
+      "]",
+      "Motif_8"
+    ],
+    "support": 4,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "]",
+      "Motif_8",
+      "Motif_3"
+    ],
+    "support": 4,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_8",
+      "Motif_3",
+      ">"
+    ],
+    "support": 7,
+    "mdl_gain": 11.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_7",
+      "[",
+      ">",
+      "-"
+    ],
+    "support": 4,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "]",
+      "Motif_8"
+    ],
+    "support": 4,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "+",
+      "]",
+      "Motif_8",
+      "Motif_3"
+    ],
+    "support": 4,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "]",
+      "Motif_8",
+      "Motif_3",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 8.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_10",
+      "Motif_5"
+    ],
+    "support": 3,
+    "mdl_gain": 1.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "Motif_7"
+    ],
+    "support": 3,
+    "mdl_gain": 1.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_10",
+      "Motif_5",
+      "<"
+    ],
+    "support": 3,
+    "mdl_gain": 3.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_5",
+      "<",
+      "Motif_7"
+    ],
+    "support": 3,
+    "mdl_gain": 3.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "Motif_7",
+      "Motif_8"
+    ],
+    "support": 3,
+    "mdl_gain": 3.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_7",
+      "Motif_8",
+      "Motif_3"
+    ],
+    "support": 3,
+    "mdl_gain": 3.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_10",
+      "Motif_5",
+      "<",
+      "Motif_7"
+    ],
+    "support": 3,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_5",
+      "<",
+      "Motif_7",
+      "Motif_8"
+    ],
+    "support": 3,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "Motif_7",
+      "Motif_8",
+      "Motif_3"
+    ],
+    "support": 3,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_7",
+      "Motif_8",
+      "Motif_3",
+      ">"
+    ],
+    "support": 3,
+    "mdl_gain": 5.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_5",
+      "<",
+      "Motif_2"
+    ],
+    "support": 2,
+    "mdl_gain": 1.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "Motif_2",
+      "Motif_1"
+    ],
+    "support": 2,
+    "mdl_gain": 1.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_4",
+      "Motif_5",
+      "<",
+      "Motif_2"
+    ],
+    "support": 2,
+    "mdl_gain": 2.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "Motif_5",
+      "<",
+      "Motif_2",
+      "Motif_1"
+    ],
+    "support": 2,
+    "mdl_gain": 2.0,
+    "level": 2
+  },
+  {
+    "pattern": [
+      "<",
+      "Motif_2",
+      "Motif_1",
+      "Motif_4"
+    ],
+    "support": 2,
+    "mdl_gain": 2.0,
+    "level": 2
+  }
+]

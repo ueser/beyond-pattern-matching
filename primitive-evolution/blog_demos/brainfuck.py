@@ -26,8 +26,19 @@ class BrainfuckInterpreter:
         self.output_writes = 0
         self.hit_step_limit = False
 
-    def run(self, code, input_data="", debug=False):
-        """Execute Brainfuck code with optional input data."""
+    def run(self, code, input_data="", debug=False, max_steps=10000):
+        """Execute Brainfuck code with optional input data.
+        max_steps limits total instruction steps to avoid infinite loops.
+        Resets memory and pointer on each call (stateless mode).
+        """
+        return self.run_step(code, input_data=input_data, debug=debug, max_steps=max_steps, preserve_memory=False, output_limit=None)
+
+    def run_step(self, code, input_data="", debug=False, max_steps=10000, preserve_memory=False, output_limit=None):
+        """Execute Brainfuck code with optional input data.
+        - If preserve_memory is True, keep memory and pointer across calls; otherwise reset.
+        - If output_limit is set (e.g., 1), stop once that many outputs are produced.
+        - Always resets instruction pointer to start of code.
+        """
         # Remove comments (keep only valid BF commands)
         code = ''.join(c for c in code if c in '><+-.,[]!')
 
@@ -38,15 +49,16 @@ class BrainfuckInterpreter:
         self.output_writes = 0
         self.hit_step_limit = False
 
-        # Reset state
-        self.memory = [0] * len(self.memory)
-        self.pointer = 0
+        # Reset or preserve state
+        if not preserve_memory:
+            self.memory = [0] * len(self.memory)
+            self.pointer = 0
+        # else: keep current memory and pointer
 
         # Build jump table for brackets
         jump_table = self._build_jump_table(code)
 
         step_count = 0
-        max_steps = 10000  # Prevent infinite loops
 
         while self.instruction_pointer < len(code) and step_count < max_steps:
             cmd = code[self.instruction_pointer]
@@ -59,7 +71,7 @@ class BrainfuckInterpreter:
                 if self.pointer >= len(self.memory):
                     # Circular tape assume wrapping
                     self.pointer = 0
-                    
+
             elif cmd == '<':
                 self.pointer -= 1
                 if self.pointer < 0:
@@ -68,14 +80,18 @@ class BrainfuckInterpreter:
 
             elif cmd == '+':
                 self.memory[self.pointer] = (self.memory[self.pointer] + 1) % 256
-                
+
             elif cmd == '-':
                 self.memory[self.pointer] = (self.memory[self.pointer] - 1) % 256
-                
+
             elif cmd == '.':
                 self.output.append(chr(self.memory[self.pointer]))
                 self.output_writes += 1
-                
+                # Early stop if reached output limit
+                if output_limit is not None and len(self.output) >= output_limit:
+                    self.instruction_pointer += 1
+                    break
+
             elif cmd == ',':
                 if len(input_data) > 0:
                     # Circular input: cycle back to beginning when reaching end
@@ -85,11 +101,11 @@ class BrainfuckInterpreter:
                 else:
                     # No input data: leave cell unchanged
                     pass
-                
+
             elif cmd == '[':
                 if self.memory[self.pointer] == 0:
                     self.instruction_pointer = jump_table[self.instruction_pointer]
-                    
+
             elif cmd == ']':
                 if self.memory[self.pointer] != 0:
                     self.instruction_pointer = jump_table[self.instruction_pointer]

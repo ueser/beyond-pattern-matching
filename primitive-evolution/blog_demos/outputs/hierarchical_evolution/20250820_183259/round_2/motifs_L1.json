@@ -1,0 +1,1698 @@
+[
+  {
+    "pattern": [
+      "+",
+      "+",
+      "<"
+    ],
+    "support": 39,
+    "mdl_gain": 73.5,
+    "level": 1,
+    "name": "L1M39"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+"
+    ],
+    "support": 55,
+    "mdl_gain": 85.5,
+    "level": 1,
+    "name": "L1M40"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 72,
+    "mdl_gain": 139.5,
+    "level": 1,
+    "name": "L1M41"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      ">"
+    ],
+    "support": 30,
+    "mdl_gain": 55.5,
+    "level": 1,
+    "name": "L1M42"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 30,
+    "mdl_gain": 84.0,
+    "level": 1,
+    "name": "L1M43"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">",
+      ">"
+    ],
+    "support": 8,
+    "mdl_gain": 18.0,
+    "level": 1,
+    "name": "L1M44"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      ">",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M45"
+  },
+  {
+    "pattern": [
+      "-",
+      "-",
+      ">"
+    ],
+    "support": 22,
+    "mdl_gain": 41.5,
+    "level": 1,
+    "name": "L1M46"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "<"
+    ],
+    "support": 29,
+    "mdl_gain": 51.5,
+    "level": 1,
+    "name": "L1M47"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 65,
+    "mdl_gain": 125.5,
+    "level": 1,
+    "name": "L1M48"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 10,
+    "mdl_gain": 24.0,
+    "level": 1,
+    "name": "L1M49"
+  },
+  {
+    "pattern": [
+      "<",
+      "-",
+      ">"
+    ],
+    "support": 22,
+    "mdl_gain": 39.5,
+    "level": 1,
+    "name": "L1M50"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      ">"
+    ],
+    "support": 24,
+    "mdl_gain": 47.5,
+    "level": 1,
+    "name": "L1M51"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      ">"
+    ],
+    "support": 25,
+    "mdl_gain": 31.5,
+    "level": 1,
+    "name": "L1M52"
+  },
+  {
+    "pattern": [
+      "<",
+      "-",
+      ">",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M53"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      ">",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M54"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      ">",
+      ">"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M55"
+  },
+  {
+    "pattern": [
+      "-",
+      "-",
+      "<"
+    ],
+    "support": 18,
+    "mdl_gain": 31.5,
+    "level": 1,
+    "name": "L1M56"
+  },
+  {
+    "pattern": [
+      "[",
+      "<",
+      "]"
+    ],
+    "support": 21,
+    "mdl_gain": 37.5,
+    "level": 1,
+    "name": "L1M57"
+  },
+  {
+    "pattern": [
+      ">",
+      "-",
+      ">"
+    ],
+    "support": 17,
+    "mdl_gain": 31.5,
+    "level": 1,
+    "name": "L1M58"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      "+"
+    ],
+    "support": 20,
+    "mdl_gain": 35.5,
+    "level": 1,
+    "name": "L1M59"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      ">"
+    ],
+    "support": 24,
+    "mdl_gain": 39.5,
+    "level": 1,
+    "name": "L1M60"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      "+",
+      ">"
+    ],
+    "support": 6,
+    "mdl_gain": 12.0,
+    "level": 1,
+    "name": "L1M61"
+  },
+  {
+    "pattern": [
+      "-",
+      "-",
+      "-"
+    ],
+    "support": 7,
+    "mdl_gain": 9.5,
+    "level": 1,
+    "name": "L1M62"
+  },
+  {
+    "pattern": [
+      "-",
+      "<",
+      "<"
+    ],
+    "support": 26,
+    "mdl_gain": 47.5,
+    "level": 1,
+    "name": "L1M63"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      "-"
+    ],
+    "support": 8,
+    "mdl_gain": 11.5,
+    "level": 1,
+    "name": "L1M64"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      "-",
+      ">"
+    ],
+    "support": 6,
+    "mdl_gain": 12.0,
+    "level": 1,
+    "name": "L1M65"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "-"
+    ],
+    "support": 11,
+    "mdl_gain": 17.5,
+    "level": 1,
+    "name": "L1M66"
+  },
+  {
+    "pattern": [
+      "<",
+      "-",
+      "<"
+    ],
+    "support": 22,
+    "mdl_gain": 39.5,
+    "level": 1,
+    "name": "L1M67"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "-",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M68"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      "-"
+    ],
+    "support": 14,
+    "mdl_gain": 23.5,
+    "level": 1,
+    "name": "L1M69"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      "-",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M70"
+  },
+  {
+    "pattern": [
+      ">",
+      "-",
+      ">",
+      ">"
+    ],
+    "support": 6,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M71"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "<"
+    ],
+    "support": 48,
+    "mdl_gain": 71.5,
+    "level": 1,
+    "name": "L1M72"
+  },
+  {
+    "pattern": [
+      "<",
+      "-",
+      "<",
+      "<"
+    ],
+    "support": 10,
+    "mdl_gain": 24.0,
+    "level": 1,
+    "name": "L1M73"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "-"
+    ],
+    "support": 9,
+    "mdl_gain": 13.5,
+    "level": 1,
+    "name": "L1M74"
+  },
+  {
+    "pattern": [
+      "-",
+      "-",
+      "-",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M75"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      ">",
+      ">"
+    ],
+    "support": 6,
+    "mdl_gain": 12.0,
+    "level": 1,
+    "name": "L1M76"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "<",
+      "<"
+    ],
+    "support": 10,
+    "mdl_gain": 18.0,
+    "level": 1,
+    "name": "L1M77"
+  },
+  {
+    "pattern": [
+      "-",
+      "-",
+      ">",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M78"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "-"
+    ],
+    "support": 21,
+    "mdl_gain": 37.5,
+    "level": 1,
+    "name": "L1M79"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "-",
+      ">"
+    ],
+    "support": 8,
+    "mdl_gain": 18.0,
+    "level": 1,
+    "name": "L1M80"
+  },
+  {
+    "pattern": [
+      "[",
+      "<",
+      "]",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M81"
+  },
+  {
+    "pattern": [
+      "<",
+      "-",
+      ">",
+      "-"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M82"
+  },
+  {
+    "pattern": [
+      ">",
+      "-",
+      "-"
+    ],
+    "support": 7,
+    "mdl_gain": 9.5,
+    "level": 1,
+    "name": "L1M83"
+  },
+  {
+    "pattern": [
+      ">",
+      "-",
+      "-",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M84"
+  },
+  {
+    "pattern": [
+      "<",
+      "-",
+      "-"
+    ],
+    "support": 8,
+    "mdl_gain": 11.5,
+    "level": 1,
+    "name": "L1M85"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "+"
+    ],
+    "support": 30,
+    "mdl_gain": 55.5,
+    "level": 1,
+    "name": "L1M86"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "+",
+      "<"
+    ],
+    "support": 6,
+    "mdl_gain": 12.0,
+    "level": 1,
+    "name": "L1M87"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "<"
+    ],
+    "support": 47,
+    "mdl_gain": 89.5,
+    "level": 1,
+    "name": "L1M88"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 26,
+    "mdl_gain": 72.0,
+    "level": 1,
+    "name": "L1M89"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "<",
+      "<"
+    ],
+    "support": 24,
+    "mdl_gain": 66.0,
+    "level": 1,
+    "name": "L1M90"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "<",
+      "<",
+      "<"
+    ],
+    "support": 8,
+    "mdl_gain": 24.5,
+    "level": 1,
+    "name": "L1M91"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 17,
+    "mdl_gain": 45.0,
+    "level": 1,
+    "name": "L1M92"
+  },
+  {
+    "pattern": [
+      "-",
+      "-",
+      "<",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M93"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "+"
+    ],
+    "support": 58,
+    "mdl_gain": 105.5,
+    "level": 1,
+    "name": "L1M94"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      ">",
+      "+"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M95"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "+",
+      ">"
+    ],
+    "support": 8,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M96"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+"
+    ],
+    "support": 52,
+    "mdl_gain": 99.5,
+    "level": 1,
+    "name": "L1M97"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+",
+      "<"
+    ],
+    "support": 9,
+    "mdl_gain": 21.0,
+    "level": 1,
+    "name": "L1M98"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "<",
+      "-"
+    ],
+    "support": 9,
+    "mdl_gain": 21.0,
+    "level": 1,
+    "name": "L1M99"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "-",
+      "<"
+    ],
+    "support": 10,
+    "mdl_gain": 24.0,
+    "level": 1,
+    "name": "L1M100"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "<",
+      "-",
+      "<"
+    ],
+    "support": 4,
+    "mdl_gain": 8.5,
+    "level": 1,
+    "name": "L1M101"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      "+"
+    ],
+    "support": 23,
+    "mdl_gain": 41.5,
+    "level": 1,
+    "name": "L1M102"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      ">",
+      "+"
+    ],
+    "support": 10,
+    "mdl_gain": 24.0,
+    "level": 1,
+    "name": "L1M103"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      "+",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M104"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      "+",
+      "<"
+    ],
+    "support": 8,
+    "mdl_gain": 18.0,
+    "level": 1,
+    "name": "L1M105"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M106"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "+"
+    ],
+    "support": 28,
+    "mdl_gain": 51.5,
+    "level": 1,
+    "name": "L1M107"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      ">"
+    ],
+    "support": 23,
+    "mdl_gain": 41.5,
+    "level": 1,
+    "name": "L1M108"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "<",
+      "+"
+    ],
+    "support": 12,
+    "mdl_gain": 30.0,
+    "level": 1,
+    "name": "L1M109"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "+",
+      ">"
+    ],
+    "support": 6,
+    "mdl_gain": 12.0,
+    "level": 1,
+    "name": "L1M110"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "+"
+    ],
+    "support": 25,
+    "mdl_gain": 43.5,
+    "level": 1,
+    "name": "L1M111"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "+",
+      "<"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M112"
+  },
+  {
+    "pattern": [
+      "<",
+      "-",
+      "-",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M113"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "<",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 11.0,
+    "level": 1,
+    "name": "L1M114"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 11,
+    "mdl_gain": 21.0,
+    "level": 1,
+    "name": "L1M115"
+  },
+  {
+    "pattern": [
+      "-",
+      "<",
+      "<",
+      "<"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M116"
+  },
+  {
+    "pattern": [
+      ">",
+      "-",
+      "<"
+    ],
+    "support": 17,
+    "mdl_gain": 29.5,
+    "level": 1,
+    "name": "L1M117"
+  },
+  {
+    "pattern": [
+      "-",
+      "<",
+      "+"
+    ],
+    "support": 8,
+    "mdl_gain": 11.5,
+    "level": 1,
+    "name": "L1M118"
+  },
+  {
+    "pattern": [
+      ">",
+      "-",
+      "<",
+      "+"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M119"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      ">",
+      ">"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M120"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "+",
+      "+"
+    ],
+    "support": 29,
+    "mdl_gain": 75.0,
+    "level": 1,
+    "name": "L1M121"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 6,
+    "mdl_gain": 8.5,
+    "level": 1,
+    "name": "L1M122"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "-",
+      "<",
+      "<"
+    ],
+    "support": 4,
+    "mdl_gain": 8.5,
+    "level": 1,
+    "name": "L1M123"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "<",
+      "-"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M124"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      "+",
+      "+"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M125"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+",
+      "+"
+    ],
+    "support": 21,
+    "mdl_gain": 57.0,
+    "level": 1,
+    "name": "L1M126"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 10,
+    "mdl_gain": 32.5,
+    "level": 1,
+    "name": "L1M127"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "+",
+      "<"
+    ],
+    "support": 12,
+    "mdl_gain": 30.0,
+    "level": 1,
+    "name": "L1M128"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "<",
+      "<",
+      "-"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M129"
+  },
+  {
+    "pattern": [
+      "-",
+      "-",
+      ">",
+      "+"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M130"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      ">",
+      ">"
+    ],
+    "support": 8,
+    "mdl_gain": 18.0,
+    "level": 1,
+    "name": "L1M131"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "+",
+      "+"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M132"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "+",
+      "+"
+    ],
+    "support": 12,
+    "mdl_gain": 30.0,
+    "level": 1,
+    "name": "L1M133"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 13,
+    "mdl_gain": 33.0,
+    "level": 1,
+    "name": "L1M134"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">",
+      "+"
+    ],
+    "support": 32,
+    "mdl_gain": 84.0,
+    "level": 1,
+    "name": "L1M135"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      "<"
+    ],
+    "support": 13,
+    "mdl_gain": 33.0,
+    "level": 1,
+    "name": "L1M136"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 7,
+    "mdl_gain": 20.5,
+    "level": 1,
+    "name": "L1M137"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "+",
+      ">",
+      "+"
+    ],
+    "support": 9,
+    "mdl_gain": 28.5,
+    "level": 1,
+    "name": "L1M138"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">",
+      "+",
+      "+"
+    ],
+    "support": 18,
+    "mdl_gain": 56.5,
+    "level": 1,
+    "name": "L1M139"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "+",
+      "+",
+      "+"
+    ],
+    "support": 9,
+    "mdl_gain": 28.5,
+    "level": 1,
+    "name": "L1M140"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+",
+      "+",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M141"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 9,
+    "mdl_gain": 28.5,
+    "level": 1,
+    "name": "L1M142"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "<",
+      "<",
+      "<"
+    ],
+    "support": 8,
+    "mdl_gain": 24.5,
+    "level": 1,
+    "name": "L1M143"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "+",
+      "+",
+      ">",
+      "+"
+    ],
+    "support": 5,
+    "mdl_gain": 16.0,
+    "level": 1,
+    "name": "L1M144"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "+",
+      ">",
+      "+",
+      "+"
+    ],
+    "support": 5,
+    "mdl_gain": 16.0,
+    "level": 1,
+    "name": "L1M145"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">",
+      "+",
+      "+",
+      "+"
+    ],
+    "support": 7,
+    "mdl_gain": 16.0,
+    "level": 1,
+    "name": "L1M146"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 4,
+    "mdl_gain": 11.0,
+    "level": 1,
+    "name": "L1M147"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      "<",
+      "<",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 16.0,
+    "level": 1,
+    "name": "L1M148"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M149"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">",
+      "+",
+      ">"
+    ],
+    "support": 4,
+    "mdl_gain": 8.5,
+    "level": 1,
+    "name": "L1M150"
+  },
+  {
+    "pattern": [
+      "-",
+      ">",
+      "-",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 9.0,
+    "level": 1,
+    "name": "L1M151"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "+",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 16.0,
+    "level": 1,
+    "name": "L1M152"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      "+"
+    ],
+    "support": 10,
+    "mdl_gain": 21.0,
+    "level": 1,
+    "name": "L1M153"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+",
+      "+",
+      "+"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M154"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 8,
+    "mdl_gain": 24.5,
+    "level": 1,
+    "name": "L1M155"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "+",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 16.0,
+    "level": 1,
+    "name": "L1M156"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "+",
+      "<"
+    ],
+    "support": 9,
+    "mdl_gain": 21.0,
+    "level": 1,
+    "name": "L1M157"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "<",
+      "<",
+      "+"
+    ],
+    "support": 7,
+    "mdl_gain": 20.5,
+    "level": 1,
+    "name": "L1M158"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "<",
+      "+",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M159"
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 4,
+    "mdl_gain": 8.5,
+    "level": 1,
+    "name": "L1M160"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "+",
+      ">"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M161"
+  },
+  {
+    "pattern": [
+      "-",
+      "<",
+      "-"
+    ],
+    "support": 5,
+    "mdl_gain": 5.5,
+    "level": 1,
+    "name": "L1M162"
+  },
+  {
+    "pattern": [
+      "<",
+      "-",
+      ">",
+      "+"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M163"
+  },
+  {
+    "pattern": [
+      ">",
+      "+",
+      "<",
+      "<",
+      "<",
+      "+"
+    ],
+    "support": 5,
+    "mdl_gain": 16.0,
+    "level": 1,
+    "name": "L1M164"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "<",
+      "+",
+      "+"
+    ],
+    "support": 4,
+    "mdl_gain": 8.5,
+    "level": 1,
+    "name": "L1M165"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "<",
+      "+"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M166"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "<",
+      "+",
+      "<"
+    ],
+    "support": 4,
+    "mdl_gain": 8.5,
+    "level": 1,
+    "name": "L1M167"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">",
+      "-"
+    ],
+    "support": 4,
+    "mdl_gain": 6.0,
+    "level": 1,
+    "name": "L1M168"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "+",
+      "+"
+    ],
+    "support": 7,
+    "mdl_gain": 15.0,
+    "level": 1,
+    "name": "L1M169"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      "+",
+      "<"
+    ],
+    "support": 10,
+    "mdl_gain": 24.0,
+    "level": 1,
+    "name": "L1M170"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      ">",
+      "+",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M171"
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 6,
+    "mdl_gain": 16.5,
+    "level": 1,
+    "name": "L1M172"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      ">",
+      "+",
+      "<",
+      "<"
+    ],
+    "support": 5,
+    "mdl_gain": 16.0,
+    "level": 1,
+    "name": "L1M173"
+  },
+  {
+    "pattern": [
+      "+",
+      ">",
+      "+",
+      "<",
+      "+"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M174"
+  },
+  {
+    "pattern": [
+      "+",
+      "<",
+      "<",
+      "-",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M175"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      ">",
+      "+"
+    ],
+    "support": 9,
+    "mdl_gain": 20.5,
+    "level": 1,
+    "name": "L1M176"
+  },
+  {
+    "pattern": [
+      "<",
+      "+",
+      "+",
+      "+",
+      ">"
+    ],
+    "support": 5,
+    "mdl_gain": 12.5,
+    "level": 1,
+    "name": "L1M177"
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      "+",
+      ">",
+      "+",
+      "+"
+    ],
+    "support": 6,
+    "mdl_gain": 11.0,
+    "level": 1,
+    "name": "L1M178"
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "pattern": [
+      "[",
+      ">",
+      "+",
+      "<",
+      "-",
+      "]"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      "+",
+      "+"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      "[",
+      ">",
+      "-",
+      "<",
+      "+",
+      "]",
+      ">"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      ">",
+      ">",
+      "+",
+      "+"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      "[",
+      ">",
+      "+",
+      "<",
+      "-",
+      "]",
+      "<"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      "<",
+      "<"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      "-",
+      "-"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "-",
+      "-"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      ">",
+      ">"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      "+",
+      "+",
+      ">",
+      ">",
+      "+",
+      "+"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  },
+  {
+    "pattern": [
+      "<",
+      "<",
+      "+",
+      "+"
+    ],
+    "support": "N/A",
+    "mdl_gain": "N/A",
+    "level": 1
+  }
+]

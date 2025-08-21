@@ -1,0 +1,9 @@
+run_id,task,emergence_generation,total_solutions_found,first_solution
+0,drain,0,341,",<."
+0,copy,0,44,",>+<."
+0,increment,0,22,",+."
+0,add_two,0,14,",>+<++."
+0,doubling,,0,
+0,oscillator,38,1,",++<+++>[>]+,<-<++,>+><."
+0,modular_cycle,23,1,",>>>>>+>+<<<++<->->++[<<]++>>>+>+>>>>+."
+0,fibonacci,,0,
