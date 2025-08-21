@@ -178,22 +178,18 @@ def mine_lk_motifs(winners_data: Dict[str, Any], grammar: Dict[str, Any], level:
         if mdl_gain < mdl_thresh:
             continue  # Silently reject low-quality patterns
 
-        # For L2+: Reject primitive-only patterns that pass MDL (they should be L1 motifs)
-        if level >= 2:
-            primitives = {'+', '-', '>', '<', '[', ']'}
-            if all(token in primitives for token in ngram):
-                print(f"[L{level} Miner] Rejected primitive pattern: {ngram} (MDL={mdl_gain:.2f}, should be L1 motif)")
-                continue
+        # Note: We allow primitive patterns in L2+ because they can emerge from symbolization
+        # and represent legitimate combinations in the L1-symbolized context
 
         # Pattern passes all checks
-            motifs.append(ngram)
-            motif_info.append({
-                'pattern': ngram,
-                'support': support,
-                'mdl_gain': mdl_gain,
-                'level': level
-            })
-            print(f"[L{level} Miner] Accepted motif: {ngram} (support={support}, MDL={mdl_gain:.2f})")
+        motifs.append(ngram)
+        motif_info.append({
+            'pattern': ngram,
+            'support': support,
+            'mdl_gain': mdl_gain,
+            'level': level
+        })
+        print(f"[L{level} Miner] Accepted motif: {ngram} (support={support}, MDL={mdl_gain:.2f})")
 
     print(f"[L{level} Miner] Final L{level} motifs: {len(motifs)}")
     return motifs, motif_info

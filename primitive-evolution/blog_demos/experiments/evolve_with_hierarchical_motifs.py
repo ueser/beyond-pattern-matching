@@ -75,11 +75,13 @@ def load_task_suite(suite_name: str, tasks_yaml_override: Optional[str] = None) 
     }
 
 
-def run_evolution_round(grammar_path: str, output_dir: str, tasks: Dict[str, Any],
-                       round_num: int, evo_config: Dict[str, Any], init_genomes: Optional[str] = None,
-                       tasks_yaml: Optional[str] = None) -> str:
+def run_evolution_round_progressive(grammar_path: str, output_dir: str, tasks: Dict[str, Any],
+                                   round_num: int, evo_config: Dict[str, Any],
+                                   prev_winners_file: Optional[str] = None,
+                                   tasks_yaml: Optional[str] = None) -> str:
     """
-    Run one round of evolution and return the winners file path.
+    Run one round of evolution with progressive learning within the round.
+    Tasks are processed sequentially, with each task using solutions from previous tasks in the same round.
     """
     print(f"\n{'='*60}")
     print(f"EVOLUTION ROUND {round_num}")
@@ -93,69 +95,168 @@ def run_evolution_round(grammar_path: str, output_dir: str, tasks: Dict[str, Any
     stats_file = os.path.join(round_output_dir, "evolution_stats.csv")
     winners_file = os.path.join(round_output_dir, "winners.json")
 
-    print(f"Running evolution with grammar: {grammar_path}")
+    print(f"Running progressive evolution with grammar: {grammar_path}")
     print(f"Tasks: {len(tasks)}")
     print(f"Config: {evo_config}")
     print(f"Output: {round_output_dir}")
 
-    # Run evolution via the existing CFG experiment script and copy outputs
+    # Step 1: Initialize winners.json for this round from previous round
+    if prev_winners_file and os.path.exists(prev_winners_file):
+        print(f"[Progressive] Copying winners from previous round: {prev_winners_file}")
+        shutil.copyfile(prev_winners_file, winners_file)
+        with open(winners_file, 'r') as f:
+            current_winners = json.load(f)
+        print(f"[Progressive] Initialized with {len(current_winners)} task solutions from previous round")
+    else:
+        print(f"[Progressive] Starting with empty winners (first round)")
+        current_winners = {}
+        with open(winners_file, 'w') as f:
+            json.dump(current_winners, f, indent=2)
+
+    # Step 2: Process tasks sequentially, updating winners after each task
+    repo_root = os.path.dirname(os.path.dirname(__file__))
+    all_results = []
+
+    # Load task definitions
+    if tasks_yaml:
+        sys.path.append(repo_root)
+        from tasks.sequence_suite import load_sequence_tasks
+        all_tasks = {t.name: t for t in load_sequence_tasks(tasks_yaml)}
+    else:
+        all_tasks = tasks
+
+    task_names = list(tasks.keys()) if isinstance(tasks, dict) else list(all_tasks.keys())
+
+    for i, task_name in enumerate(task_names):
+        print(f"\n[Progressive] Processing task {i+1}/{len(task_names)}: {task_name}")
+
+        # Run evolution for this single task
+        task_winners_file = run_single_task_evolution(
+            grammar_path=grammar_path,
+            task_name=task_name,
+            round_output_dir=round_output_dir,
+            evo_config=evo_config,
+            init_genomes=winners_file,  # Use current round's winners
+            tasks_yaml=tasks_yaml,
+            task_index=i
+        )
+
+        # Update the round's winners.json with new solutions
+        if os.path.exists(task_winners_file):
+            with open(task_winners_file, 'r') as f:
+                task_results = json.load(f)
+
+            # Merge new solutions into current winners
+            for task, task_data in task_results.items():
+                if task in current_winners:
+                    # Merge solutions, avoiding duplicates
+                    existing_solutions = set(current_winners[task].get('solutions', []))
+                    new_solutions = task_data.get('solutions', [])
+                    merged_solutions = list(existing_solutions.union(set(new_solutions)))
+                    current_winners[task] = {
+                        'solutions': merged_solutions,
+                        'count': len(merged_solutions)
+                    }
+                    print(f"[Progressive] Updated {task}: {len(existing_solutions)} -> {len(merged_solutions)} solutions")
+                else:
+                    current_winners[task] = task_data
+                    print(f"[Progressive] Added {task}: {len(task_data.get('solutions', []))} solutions")
+
+            # Save updated winners
+            with open(winners_file, 'w') as f:
+                json.dump(current_winners, f, indent=2)
+
+            print(f"[Progressive] Updated winners.json with solutions from {task_name}")
+
+    print(f"\n[Progressive] Evolution round completed. Final winners saved to: {winners_file}")
+
+    # Verify winners file exists and has content
+    with open(winners_file, 'r') as f:
+        winners = json.load(f)
+        total_solutions = sum(len(task_data.get('solutions', [])) for task_data in winners.values())
+        print(f"Total solutions found: {total_solutions}")
+
+    return winners_file
+
+
+def run_single_task_evolution(grammar_path: str, task_name: str, round_output_dir: str,
+                             evo_config: Dict[str, Any], init_genomes: Optional[str] = None,
+                             tasks_yaml: Optional[str] = None, task_index: int = 0) -> str:
+    """
+    Run evolution for a single task and return the winners file path.
+    """
+    print(f"  Running evolution for task: {task_name}")
+
     try:
         repo_root = os.path.dirname(os.path.dirname(__file__))
         evo_script = os.path.join(repo_root, 'experiments', 'evolve_with_cfg.py')
-        # Map config to script args (pass only what evolve_with_cfg.py supports)
+
+        # Create task-specific output files
+        task_output_file = os.path.join(round_output_dir, f"task_{task_index}_{task_name}_best.json")
+
+        # Map config to script args
         cmd = [sys.executable, evo_script, '--grammar', grammar_path]
+        cmd += ['--tasks', task_name]  # Run only this specific task
+
         if 'population_size' in evo_config:
             cmd += ['--pop', str(int(evo_config['population_size']))]
         if 'generations' in evo_config:
             cmd += ['--gens', str(int(evo_config['generations']))]
         if 'seed' in evo_config:
-            cmd += ['--seed', str(int(evo_config['seed']))]
+            cmd += ['--seed', str(int(evo_config['seed']) + task_index)]  # Different seed per task
         if 'step_limit' in evo_config:
             cmd += ['--step-limit', str(int(evo_config['step_limit']))]
-        # Use symbol-based budget
         if 'max_symbols' in evo_config:
             cmd += ['--max-len', str(int(evo_config['max_symbols']))]
         elif 'max_program_length' in evo_config:
-            # Back-compat: treat as symbols as well
             cmd += ['--max-len', str(int(evo_config['max_program_length']))]
         if 'elitism' in evo_config:
             cmd += ['--elitism', str(float(evo_config['elitism']))]
         if evo_config.get('no_parallel'):
             cmd += ['--no-parallel']
-        if init_genomes:
+        if init_genomes and os.path.exists(init_genomes):
             cmd += ['--init-genomes', init_genomes]
-        # Optional tasks YAML override (lets you point to new_sequences.yaml)
         if tasks_yaml:
             cmd += ['--tasks_yaml', tasks_yaml]
-        print(f"Launching evolution subprocess: {' '.join(cmd)}")
+
+        print(f"    Command: {' '.join(cmd)}")
         subprocess.run(cmd, cwd=repo_root, check=True)
 
         # Locate outputs produced by evolve_with_cfg.py
         base_name = os.path.splitext(os.path.basename(grammar_path))[0]
         runs_dir = os.path.join(repo_root, 'outputs', 'runs')
         winners_src = os.path.join(runs_dir, f"{base_name}_best.json")
-        csv_src = os.path.join(runs_dir, f"{base_name}.csv")
 
-        if not os.path.exists(winners_src):
-            raise FileNotFoundError(f"Expected winners not found: {winners_src}")
-        # Copy to round directory
-        shutil.copyfile(winners_src, winners_file)
-        if os.path.exists(csv_src):
-            shutil.copyfile(csv_src, stats_file)
-
-        print(f"Evolution completed (subprocess). Winners saved to: {winners_file}")
-
-        # Verify winners file exists and has content
-        with open(winners_file, 'r') as f:
-            winners = json.load(f)
-        total_solutions = sum(len(task_data.get('solutions', [])) for task_data in winners.values())
-        print(f"Total solutions found: {total_solutions}")
-
-        return winners_file
+        if os.path.exists(winners_src):
+            # Copy to task-specific file
+            shutil.copyfile(winners_src, task_output_file)
+            print(f"    Task {task_name} completed. Results: {task_output_file}")
+            return task_output_file
+        else:
+            print(f"    Task {task_name} completed but no winners file found")
+            return ""
 
     except Exception as e:
-        print(f"Evolution failed: {e}")
-        raise
+        print(f"    Task {task_name} failed: {e}")
+        return ""
+
+
+def run_evolution_round(grammar_path: str, output_dir: str, tasks: Dict[str, Any],
+                       round_num: int, evo_config: Dict[str, Any], init_genomes: Optional[str] = None,
+                       tasks_yaml: Optional[str] = None) -> str:
+    """
+    Backward compatibility wrapper for the old evolution round function.
+    Now uses progressive learning by default.
+    """
+    return run_evolution_round_progressive(
+        grammar_path=grammar_path,
+        output_dir=output_dir,
+        tasks=tasks,
+        round_num=round_num,
+        evo_config=evo_config,
+        prev_winners_file=init_genomes,
+        tasks_yaml=tasks_yaml
+    )
 
 
 def run_hierarchical_evolution_pipeline(cfg: Dict[str, Any]):
@@ -282,15 +383,15 @@ def run_hierarchical_evolution_pipeline(cfg: Dict[str, Any]):
             grammar_in = os.path.join(prev_round, 'grammar_final.json')
             seed_winners = os.path.join(prev_round, 'winners.json')
 
-        # Step 1: Run evolution with previous round grammar and seed
+        # Step 1: Run evolution with progressive learning within the round
         # Use the timestamped session directory for evolution output
-        winners_file = run_evolution_round(
+        winners_file = run_evolution_round_progressive(
             grammar_path=grammar_in,
             output_dir=miner.session_dir,  # Use timestamped session directory
             tasks=task_suite['tasks'],
             round_num=iteration,
             evo_config=evo_config,
-            init_genomes=seed_winners,
+            prev_winners_file=seed_winners,
             tasks_yaml=task_suite.get('tasks_yaml'),
         )
 
