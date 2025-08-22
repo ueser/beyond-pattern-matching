@@ -6,6 +6,22 @@ This repository implements a hierarchical motif discovery system for evolving Br
 
 The project demonstrates how evolutionary algorithms can discover hierarchical patterns in code, moving beyond simple pattern matching to build compositional program structures. Programs evolve to solve sequence generation tasks (arithmetic progressions, oscillators, etc.) while the system automatically discovers reusable motifs at multiple abstraction levels.
 
+### Analogy: Learning to Cook
+
+To understand how the system works, imagine a chef who only knows basic actions: `chop`, `stir`, `heat`, `add_salt`.
+
+1.  **Evolve (Practice)**: They try random combinations to make "scrambled eggs." After many attempts, they succeed with a sequence like `crack_egg`, `whisk`, `heat_pan`, `add_to_pan`, `stir`.
+
+2.  **Mine (Find Patterns)**: They notice they frequently perform `crack_egg` -> `whisk`. They decide to call this new skill **"prepare_eggs"**. This is a Level 1 (L1) motif.
+
+3.  **Enrich Grammar (Learn)**: Their internal cookbook now has a new, high-level recipe: "prepare_eggs".
+
+4.  **Evolve (Practice Again)**: Now, when trying to make an omelette, they don't have to think about the individual steps. They can just use their **"prepare_eggs"** skill. This makes it much faster to discover the full omelette recipe.
+
+5.  **Mine (Find Higher-Level Patterns)**: After making many dishes, they realize that the sequence **"prepare_eggs"** -> `add_cheese` -> `fold` is a very common and useful pattern. They name this even higher-level skill **"make_cheese_omelette"**. This is a Level 2 (L2) motif, built upon an L1 motif.
+
+This application does exactly that, but for programming. It discovers fundamental building blocks and then composes them into increasingly powerful and abstract skills, demonstrating a scalable approach to automated learning and problem-solving.
+
 ## Key Features
 
 - **Multi-level Hierarchical Motif Discovery**: Automatically discovers motifs at L1 (primitive combinations), L2 (L1 motif combinations), L3 (L1+L2 combinations), etc.
